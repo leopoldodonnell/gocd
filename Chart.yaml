@@ -1,0 +1,15 @@
+apiVersion: v1
+name: gocd
+version: 0.1.0
+description: Deploy ThoughtWorks GoCD Continuous Deployment platform
+keywords:
+  - ThoughtWorks
+  - GoCD
+  - Continuous Deployment
+home: https://github.com/leopolodonnell/gocd-chart
+sources:
+  - https://github.com/leopoldodonnell/gocd-chart
+maintainers: # (optional)
+  - name: Leo O'Donnel
+engine: gotpl
+icon: https://lh4.googleusercontent.com/proxy/d23FC1lSdubEjKNjyq3Bp9FE3KlykIAkoOUTSVlogBHKT6wbjcfvghEQpW0q4E7yNvd52dSf-CAhKPL7WOdC6NKCFGH908SIqw_xuk-fvAk-_Fd7d0zXlk3MDjNB84cM7Nh2JipKVnrnyHE8FxVXPXsdqLH4j4MWI4bs=w5000-h5000

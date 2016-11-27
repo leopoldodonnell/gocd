@@ -1,0 +1,35 @@
+# Default values for gocd.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+server:
+  replicaCount: 1
+  image:
+    repository: gocd/gocd-server
+    tag: latest
+    pullPolicy: IfNotPresent
+  service:
+    name: gocd
+    type: NodePort
+    externalPort: 80
+    internalPort: 80
+  resources:
+    limits:
+      cpu: 100m
+      memory: 128Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
+agent:  
+  replicaCount: 3
+  image:
+    repository: gocd/gocd-agent
+    tag: latest
+    pullPolicy: IfNotPresent
+  resources:
+    limits:
+      cpu: 100m
+      memory: 128Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
+
